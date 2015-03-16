@@ -441,6 +441,14 @@
                 _.$prevArrow.addClass('slick-disabled');
             }
 
+        } else if (_.options.arrows === false) {
+
+          _.$prevArrow = $(_.options.prevArrow);
+          _.$nextArrow = $(_.options.nextArrow);
+
+          _.$prevArrow.hide();
+          _.$nextArrow.hide();
+
         }
 
     };
